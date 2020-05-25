@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.fragments.DashboardFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashboardHeader"
+
+        android:fillViewport="true"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_100"
+            android:descendantFocusability="blocksDescendants">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/family_root_container"
+                android:layout_width="@dimen/common_margin_150"
+                android:layout_height="@dimen/common_margin_125"
+                android:layout_marginStart="@dimen/common_margin_20"
+                android:layout_marginTop="@dimen/common_margin_20"
+                app:layout_constraintEnd_toStartOf="@+id/favorite_root_container"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/family_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/common_margin_5"
+                    style="@style/CardStyle_Default"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txt_family_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_margin_10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="5"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size_18"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_margin_10"
+                            android:text="@string/members"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_family_count" />
+
+                        <Button
+                            android:id="@+id/btn_family_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_margin_40"
+                            android:background="@drawable/top_borderless_button_bg"
+                            android:drawableStart="@drawable/family"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/contacts"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/common_text_size_14"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/favorite_root_container"
+                android:layout_width="@dimen/common_margin_150"
+                android:layout_height="@dimen/common_margin_125"
+                android:layout_marginTop="@dimen/common_margin_20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/family_root_container"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/favorite_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/common_margin_5"
+                    style="@style/CardStyle_Default"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txt_favorite_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_margin_10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="5"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/common_text_size_18"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_margin_10"
+                            android:text="@string/hospitals"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_favorite_count" />
+
+                        <Button
+                            android:id="@+id/btn_favorite_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_margin_40"
+                            android:background="@drawable/top_borderless_button_bg"
+                            android:drawableStart="@drawable/favorite"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="@string/favorites"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/common_text_size_14"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/find_hospital_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_125"
+                style="@style/CardStyle_Default"
+                android:layout_marginTop="@dimen/common_margin_30"
+                android:layout_marginStart="@dimen/common_margin_20"
+                android:layout_marginEnd="@dimen/common_margin_20"
+                app:layout_constraintTop_toBottomOf ="@id/family_root_container">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/search_hospital_contaienr"
+                        android:layout_width="@dimen/common_margin_60"
+                        android:layout_height="@dimen/common_margin_60"
+                        android:layout_marginTop="@dimen/common_margin_10"
+                        android:layout_marginStart="@dimen/common_margin_10"
+                        android:background="@drawable/circle_bg"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="@dimen/common_text_size_16"
+                            android:textColor="@color/colorPink"
+                            android:layout_centerInParent="true"
+                            android:text="1000"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toRightOf="@id/search_hospital_contaienr"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="@dimen/common_margin_20"
+                        android:layout_marginStart="@dimen/common_margin_10"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="@dimen/common_text_size_15"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/search_hospital_desc"/>
+                    <Button
+                        android:id="@+id/btn_find_hospitals"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_margin_40"
+                        android:background="@drawable/top_borderless_button_bg"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/search_hospital"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/common_text_size_14"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:id="@+id/search_history_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_10"
+                android:layout_marginTop="@dimen/common_margin_5"
+                app:layout_constraintTop_toBottomOf ="@id/find_hospital_container"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/family_history_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_125"
+                style="@style/CardStyle_Default"
+                android:layout_marginTop="@dimen/common_margin_30"
+                android:layout_marginStart="@dimen/common_margin_20"
+                android:layout_marginEnd="@dimen/common_margin_20"
+                app:layout_constraintTop_toBottomOf ="@id/search_history_separator">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/familhistory_container"
+                        android:layout_width="@dimen/common_margin_100"
+                        android:layout_height="@dimen/common_margin_100"
+                        android:layout_marginStart="@dimen/common_margin_10"
+                        android:src="@drawable/health_history"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/common_margin_20"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center"
+                        android:text="@string/medical_history_desc"
+                        android:textSize="@dimen/common_text_size_15"
+                        app:layout_constraintEnd_toStartOf="@+id/familhistory_container"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_margin_40"
+                        android:background="@drawable/top_borderless_button_bg"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/medical_history"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/common_text_size_14"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_100"
+                android:layout_marginTop="@dimen/common_margin_5"
+                app:layout_constraintTop_toBottomOf ="@id/family_history_container"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dashboardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_100"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/common_margin_5"
+        android:background="@drawable/header_bg">
+
+        <ImageView
+            android:id="@+id/img_dashboard_avatar"
+            android:layout_width="@dimen/common_margin_75"
+            android:layout_height="@dimen/common_margin_75"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/common_margin_20"
+            android:src="@drawable/avatar_tmp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/img_dashboard_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/common_margin_10"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="@dimen/common_text_size_16"
+            android:textColor="@color/colorWhite"
+            android:text="Arun Ganesh"
+            />
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/img_dashboard_avatar"
+            app:layout_constraintTop_toBottomOf="@id/txt_user_name"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginTop="@dimen/def_margin3"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="@dimen/common_text_size_12"
+            android:textColor="@color/colorWhite"
+            android:text="Male" />
+        <TextView
+            android:id="@+id/txt_blood_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/img_dashboard_avatar"
+            app:layout_constraintTop_toBottomOf="@id/txt_gender"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginTop="@dimen/def_margin3"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="@dimen/common_text_size_12"
+            android:textColor="@color/colorWhite"
+            android:text="O+ve, 38 Yrs"/>
+        <TextView
+            android:id="@+id/txt_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/img_dashboard_avatar"
+            app:layout_constraintTop_toBottomOf="@id/txt_blood_group"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginTop="@dimen/def_margin3"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="@dimen/common_text_size_12"
+            android:textColor="@color/colorWhite"
+            android:text="Madurai"/>
+        <ImageView
+            android:layout_width="@dimen/common_margin_20"
+            android:layout_height="@dimen/common_margin_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/notification_default"
+            android:layout_margin="@dimen/common_margin_10"
+            android:scaleType="fitXY"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

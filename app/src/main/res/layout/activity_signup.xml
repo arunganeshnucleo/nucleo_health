@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name_text"
+        app:hintTextColor="@color/grey_color"
+        android:textColorHint="@color/grey_color"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/common_margin_20"
+        style="@style/LoginTextInputLayoutStyle_01"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+<!--
+"phone_number": "9944053206",
+    "password": "123456",
+    "first_name": "tess",
+    "last_name": "tess",
+    "user_type": "patient",
+    "user_type_id": "1",
+    "gender": "Female",
+    "date_of_birth": "19-2-1992"
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

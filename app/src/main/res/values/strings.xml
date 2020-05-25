@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Nucleo Health</string>
+    <string name="google_map_key">AIzaSyA0InVuFnYT1VUC-8hdafNoXPT1QmrRl5Y</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_title">LOGIN</string>
+    <string name="user_name_hint">Please enter email/phone</string>
+    <string name="password_hint">Please enter password</string>
+
+    <string name="email_phone">Email/Phone</string>
+    <string name="password_lbl">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signin_lbl">Sign In</string>
+    <string name="signup_lbl">Don\'t have an account? Sign Up!</string>
+    <string name="image_description">loading</string>
+
+    <!--Forgot password-->
+    <string name="forgot_password_title">Forgot Password!</string>
+    <string name="forgot_password_text_01">Need to reset your password.</string>
+    <string name="forgot_password_text_02">Enter your Email and we will send you the instructions.</string>
+
+    <string name="verify_mobile_title">VERIFY YOUR MOBILE</string>
+    <string name="verify_mobile_text">Please review your registered email/Phone number for OTP.  Your OTP will expired within 15mins</string>
+    <string name="str_next">Next</string>
+
+    <string name="create_account_title">CREATE AN ACCOUNT</string>
+    <string name="email_text">Email</string>
+    <string name="first_name_text">First Name</string>
+    <string name="last_name_text">Last Name</string>
+    <string name="password_text">Password</string>
+    <string name="reenter_password_text">Confirm Password</string>
+    <string name="phone_text">Phone</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="privacy_lbl">By signing up, you agree with the \n Terms of Service &amp; Privacy Policy</string>
+    <string name="already_registered_lbl">Already have an account? Login!</string>
+    <string name="contacts">Contacts</string>
+    <string name="favorites">Favorites</string>
+    <string name="members">Members</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="medical_history">Medical History</string>
+    <string name="medical_history_desc">Record of your illnesses and \nmedical conditions</string>
+    <string name="search_hospital">Search Hospital</string>
+    <string name="search_hospital_desc">Network hospitals and \ngrowing!</string>
+    <string name="speciality_title">Speciality… Looking for</string>
+    <string name="family_details">Family List</string>
+    <string name="next_text">Next</string>
+    <string name="ewt">Estimated wait time</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="hospital_list">Hospital List</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

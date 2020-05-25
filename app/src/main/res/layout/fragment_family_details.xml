@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.SpecialityFilterFragment">
+    <RelativeLayout
+        android:id="@+id/family_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_75"
+        android:background="@drawable/header_bg"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="italic"
+            android:textSize="@dimen/common_text_size_18"
+            android:text="@string/family_details"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Close_Button_Style"
+        android:background="@drawable/back_icon"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/family_header">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_family_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginTop="@dimen/common_margin_10"
+            android:layout_marginEnd="@dimen/common_margin_10"
+            android:layout_marginBottom="@dimen/common_margin_50" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

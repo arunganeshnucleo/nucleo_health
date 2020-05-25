@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.SpecialityFilterFragment">
+    <RelativeLayout
+        android:id="@+id/speciality_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_100"
+        android:background="@drawable/header_bg"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/montserrat_light"
+            android:textStyle="italic"
+            android:textSize="@dimen/common_text_size_18"
+            android:text="@string/speciality_title"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Close_Button_Style"
+        android:background="@drawable/back_icon"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/speciality_header">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_speciality"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/common_margin_10"
+            android:layout_marginTop="@dimen/common_margin_10"
+            android:layout_marginEnd="@dimen/common_margin_10"
+            android:layout_marginBottom="@dimen/common_margin_50" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_speciality_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_50"
+        android:layout_marginLeft="@dimen/common_margin_20"
+        android:layout_marginRight="@dimen/common_margin_20"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/next_button_bg"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="@dimen/common_text_size_16"
+        android:textColor="@color/colorWhite"
+        android:text="@string/next_text"/>
+</RelativeLayout>
